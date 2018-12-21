@@ -1,0 +1,16 @@
+a=input("cümle giriniz")
+b=a[::-1]#d bölmü için
+print("ters hali:",a[::-1]) #a bölmü
+print("kelimeler ayrı ayrı:",a.split(" ")) #b bölmü
+
+harf=[] #c bölmü
+sayi=[]
+for i in(a):
+    if not (i in harf):
+        harf.append(i)
+        sayi.append(1)
+    else:
+        sayi[harf.index(i)]=sayi[harf.index(i)]+1
+for j in range(len(harf)):
+    print(harf[j], " - ", sayi[j])
+print(b.split()[::-1]) #d bölmü
